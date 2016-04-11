@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>My page</title>
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap-theme.css"/>
+        <link rel="stylesheet" href="/css/easyTaggedTextbox.css"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1>Test of easyTaggedTextbox</h1>
+            <hr/>
+            <form role="form">
+                <div class="form-group">
+                    <label>My items</label>
+                    <div class="my-class1"></div>
+
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-primary btn1">Log values</button>
+                    <button class="btn btn-primary btn2">Add sample text</button>
+                    <button class="btn btn-primary btn3">Clear all</button>
+                    <button class="btn btn-primary btn4">Focus</button>
+                </div>
+            </form>
+        </div>
+        <script src="/lib/jquery/dist/jquery.js"></script>
+        <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/js/easyTaggedTextbox.js"></script>
+        <script>
+            $(document).ready(function () {
+               $('.my-class1').taggedTextbox();
+                $('.btn1').click(function (ev) {
+                    ev.preventDefault();
+                   var data = $('.my-class1').taggedTextbox("getElements");
+                    console.log(data);
+                });
+                $('.btn2').click(function (ev) {
+                    ev.preventDefault();
+                    var data = $('.my-class1').taggedTextbox("add", 'sample');
+                });
+                $('.btn3').click(function (ev) {
+                    ev.preventDefault();
+                    var data = $('.my-class1').taggedTextbox("clear");
+                });
+                $('.btn4').click(function (ev) {
+                    ev.preventDefault();
+                    var data = $('.my-class1').taggedTextbox("getTextbox");
+                    $(data).focus();
+                });
+            });
+        </script>
+    </body>
+</html>

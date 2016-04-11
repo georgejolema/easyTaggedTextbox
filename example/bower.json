@@ -1,0 +1,22 @@
+{
+  "name": "easytaggedtextbox",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jorge Maldonado"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

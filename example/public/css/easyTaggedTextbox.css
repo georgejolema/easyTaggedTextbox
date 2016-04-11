@@ -1,0 +1,22 @@
+.easy-tagged-text, .easy-tagged-text:active, .easy-tagged-text:focus{
+    border:none;
+    outline:none;
+ }
+
+.easy-tag-tags{
+    display: inline;
+}
+
+.easy-tag-tags .item-tag{
+    margin: 0px 10px 0px 10px;
+    padding:2px;
+    border-radius: 15px;
+}
+.easy-tag-tags .destroy-tag{
+    margin-left: 2px;
+    color:white;
+}
+
+.easy-tagged-textbox-container{
+    height: auto;
+}
